@@ -10,6 +10,7 @@ namespace GitHub_Deneme
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("tolga gör pls");
         }
     }
 }
