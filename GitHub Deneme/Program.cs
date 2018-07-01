@@ -47,6 +47,8 @@ namespace GitHub_Deneme
             Console.SetCursorPosition(20, 11);
             Console.WriteLine("1 - Nice to meet you P.H. || 2 - Why did you call me? ");
             Console.ReadLine();
+            Console.Clear();
+            CanDEV.GUI();
             Console.SetCursorPosition(1, 9);
             CanDEV.text = @"> So I kinda need your help. I'm part of a research group and we are working on a project in the 
 middle of nowhere. Problem is emergency alarms are going crazy so I'm supposed to leave the building
