@@ -13,51 +13,48 @@ namespace GitHub_Deneme
 
         static void Main(string[] args)
         {
-           
+            CanDEV.GUI();
             int bekleme = timer.Next(1000, 7000);
             
 
             Console.SetWindowSize(100, 30);
-             Console.SetCursorPosition(16, 9);
+             Console.SetCursorPosition(20, 9);
+            Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("> Acquiring signal... ");
             
             System.Threading.Thread.Sleep(bekleme);
-
-            Console.WriteLine("> Signal acquired press any key to continue...");
+            Console.SetCursorPosition(20, 10);
+            Console.WriteLine("> Signal acquired press 'Enter' to continue...");
             Console.ReadKey();
-
-           
-            Console.WriteLine("Hello! Can you hear me?");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.SetCursorPosition(1, 12);
+            Console.WriteLine("> Hello! Can you hear me?");
+            Console.SetCursorPosition(20, 14);
             Console.WriteLine("1 - Yes I can hear you || 2 - Who is this? ");
 
         int answer = int.Parse(Console.ReadLine());
+            Console.SetCursorPosition(1, 16);
             switch (answer)
             {
                 case 1:
-                    Console.WriteLine("Oh! Thank god finally I have been trying to reach out to somebody for hours. Call me P.H.");
-                    Console.ReadKey();
+                    Console.WriteLine("> Oh! Thank god finally I have been trying to reach out to somebody for hours. Call me P.H.");
                     break;
+
                 case 2:
-                    Console.WriteLine("My name is Phillip Hunter but you can call me P.H.");
-                    Console.ReadKey();
+                    Console.WriteLine("> My name is Phillip Hunter but you can call me P.H.");
                     break;
             }
-
-
+            Console.SetCursorPosition(20, 18);
             Console.WriteLine("1 - Nice to meet you P.H. || 2 - Why did you call me? ");
             Console.ReadLine();
 
-            Console.WriteLine("So I kinda need your help. I'm part of a research group and we are working on a project in the middle of nowhere");
+            Console.WriteLine(@"> So I kinda need your help. I'm part of a research group and we are working on a project
+> in the middle of nowhere");
             
           
 
 
-            //int luck = CanDEV.Zar();
-            //int luck2 = CanDEV.Zar();
-            //if (luck2 == luck)
-            //{
-            //    luck2 = CanDEV.Zar();
-            //}
+           
 
         }
     }
