@@ -27,7 +27,8 @@ namespace GitHub_Deneme
             Console.ReadKey();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.SetCursorPosition(1, 12);
-            Console.WriteLine("> Hello! Can you hear me?");
+            CanDEV.text = "> Hello! Can you hear me?";
+            CanDEV.Yazı();
             Console.SetCursorPosition(20, 14);
             Console.WriteLine("1 - Yes I can hear you || 2 - Who is this? ");
         int answer = int.Parse(Console.ReadLine());
@@ -35,21 +36,22 @@ namespace GitHub_Deneme
             switch (answer)
             {
                 case 1:
-                    Console.WriteLine("> Oh! Thank god finally I have been trying to reach out to somebody for hours. Call me P.H.");
+                    CanDEV.text = "> Oh! Thank god finally I have been trying to reach out to somebody for hours. Call me P.H.";
                     break;
 
                 case 2:
-                    Console.WriteLine("> My name is Phillip Hunter but you can call me P.H.");
+                    CanDEV.text = "> My name is Phillip Hunter but you can call me P.H.";
                     break;
             }
+            CanDEV.Yazı();
             Console.SetCursorPosition(20, 11);
             Console.WriteLine("1 - Nice to meet you P.H. || 2 - Why did you call me? ");
             Console.ReadLine();
-            System.Threading.Thread.Sleep(CanDEV.bekleme);
             Console.SetCursorPosition(1, 9);
-            Console.WriteLine(@"> So I kinda need your help. I'm part of a research group and we are working on a project in the 
+            CanDEV.text = @"> So I kinda need your help. I'm part of a research group and we are working on a project in the 
 middle of nowhere. Problem is emergency alarms are going crazy so I'm supposed to leave the building
-but the damndoor is stuck.");
+but the damndoor is stuck.";
+            CanDEV.Yazı();
             Console.SetCursorPosition(20, 13);
             Console.WriteLine("1 - Well what do you have around you? || 2 - What do you want me to do? || 3 - Define nowhere. ");
            int answer2 = int.Parse(Console.ReadLine());

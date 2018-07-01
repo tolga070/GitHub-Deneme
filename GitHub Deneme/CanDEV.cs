@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace GitHub_Deneme
 {
@@ -15,7 +16,7 @@ namespace GitHub_Deneme
         public static Random zar = new Random();
         public static Random timer = new Random();
         public static int bekleme = timer.Next(1000, 7000);
-
+        public static string text;
 
         public static void GUI()
         {
@@ -46,20 +47,28 @@ namespace GitHub_Deneme
             Console.WriteLine("Weapon: {0}", weapon);
 
         }
-
+        //ZAR
         public static int Zar()
         {
             int şans = zar.Next(1, 7);
             Console.WriteLine("You've rolled ~ {0} ~ ", şans);
             return şans;
         }
-        
+        //CEVAP
         public static void Cevap()
         {
-            System.Threading.Thread.Sleep(bekleme);
             Console.Clear();
             CanDEV.GUI();
             Console.SetCursorPosition(1, 9);
+        }
+        //YAZI
+        public static void Yazı()
+        {
+            foreach (char c in text)
+            {
+                Console.Write(c);
+                Thread.Sleep(50);
+            }
         }
     }
 }
