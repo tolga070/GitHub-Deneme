@@ -19,6 +19,11 @@ namespace GitHub_Deneme
             Console.WriteLine("tolga gör pls2");
             Console.WriteLine("tolga gör pls3");
 
+            Console.WriteLine("jojo referances");
+        }
+        public static void Abraham()
+        {
+            Console.WriteLine("ahuahuahu");
         }
     }
 }
