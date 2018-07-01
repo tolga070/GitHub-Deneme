@@ -56,19 +56,47 @@ but the damndoor is stuck.");
             switch (answer2)
             {
                 case 1:
-                    Console.WriteLine("I'm in a small room filled with my research papers and some chemicals");
-                    break;
+                    Console.WriteLine("I'm in a small room filled with my research papers my lucky pocket knife, a blow torch and some acids.");
+                    goto arc1;
+                    
                 case 2:
-                    Console.WriteLine("placeholder");
+                    Console.WriteLine("I don't know some advice would be nice.");
                     break;
                 case 3:
-                    Console.WriteLine("That doesn't matter. I need help right now ");
+                    Console.WriteLine("That doesn't matter. I need help your right now. Focus.");
+                    Console.WriteLine("1 - Well what do you have around you ? || 2 - What do you want me to do?");
+                    int answer2_2 = int.Parse(Console.ReadLine());
+                    switch (answer2_2)
+                    {
+                        case 1:
+                            Console.WriteLine("I'm in a small room filled with my research papers my lucky pocket knife, a blow torch and some acids.");
+                            goto arc1;
+
+                        case 2:
+                            Console.WriteLine("I don't know some advice would be nice.");
+                            break;
+                    }
+                            break;
+            }
+
+            arc1:
+            Console.WriteLine("1 - What kind of chemicals? || 2 - Just kick the door or something ");
+            int answer3 = int.Parse(Console.ReadLine());
+            switch (answer3)
+            {
+                case 1:
+                    Console.WriteLine("");
+                    goto arc1;
+
+                case 2:
+                    Console.WriteLine("I don't know some advice would be nice.");
                     break;
+                
             }
 
 
 
-           
+
 
         }
     }
