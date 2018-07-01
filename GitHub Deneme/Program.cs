@@ -12,5 +12,9 @@ namespace GitHub_Deneme
         {
             Console.WriteLine("jojo referances");
         }
+        public static void Abraham()
+        {
+            Console.WriteLine("ahuahuahu");
+        }
     }
 }
