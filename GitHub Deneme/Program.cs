@@ -57,7 +57,7 @@ but the damndoor is stuck.");
             switch (answer2)
             {
                 case 1:
-                    Console.WriteLine("I'm in a small room filled with my research papers my lucky pocket knife, a blow torch and some acids.");
+                    Console.WriteLine("I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.");
                     goto arc1;
                     
                 case 2:
@@ -70,7 +70,7 @@ but the damndoor is stuck.");
                     switch (answer2_2)
                     {
                         case 1:
-                            Console.WriteLine("I'm in a small room filled with my research papers my lucky pocket knife, a blow torch and some acids.");
+                            Console.WriteLine("I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.");
                             goto arc1;
 
                         case 2:
