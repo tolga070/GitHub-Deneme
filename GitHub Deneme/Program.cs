@@ -10,7 +10,12 @@ namespace GitHub_Deneme
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            int luck = CanDEV.Zar();
+            int luck2 = CanDEV.Zar();
+            if (luck2 == luck)
+            {
+                luck2 = CanDEV.Zar();
+            }
         }
     }
 }
