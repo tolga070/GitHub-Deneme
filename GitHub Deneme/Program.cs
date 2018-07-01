@@ -10,9 +10,7 @@ namespace GitHub_Deneme
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("tolga gör pls");
-            Console.WriteLine("tolga gör pls2");
-            Console.WriteLine("tolga gör pls3");
+            Console.WriteLine("jojo referances");
         }
     }
 }
