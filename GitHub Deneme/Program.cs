@@ -13,6 +13,7 @@ namespace GitHub_Deneme
 
         static void Main(string[] args)
         {
+
            Console.SetWindowSize(60, 35);
            
             Console.WriteLine("> ");
@@ -39,12 +40,14 @@ namespace GitHub_Deneme
             Console.WriteLine("1 - Nice to meet you P.H. || 2 - Why did you call me? ");
             Console.ReadLine();
 
-            int luck = CanDEV.Zar();
-            int luck2 = CanDEV.Zar();
-            if (luck2 == luck)
-            {
-                luck2 = CanDEV.Zar();
-            }
+
+            //int luck = CanDEV.Zar();
+            //int luck2 = CanDEV.Zar();
+            //if (luck2 == luck)
+            //{
+            //    luck2 = CanDEV.Zar();
+            //}
+
         }
     }
     
