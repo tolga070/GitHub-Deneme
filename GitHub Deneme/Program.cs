@@ -48,7 +48,9 @@ namespace GitHub_Deneme
             Console.WriteLine("1 - Nice to meet you P.H. || 2 - Why did you call me? ");
             Console.ReadLine();
 
-            Console.WriteLine("So I kinda need your help. I'm part of a research group and we are working on a project in the middle of nowhere. Problem is emergency alarms are going crazy so I'm suppose to leave the building but the damn door is stuck.");
+            Console.WriteLine(@"So I kinda need your help. I'm part of a research group and we are working on a project in the 
+middle of nowhere. Problem is emergency alarms are going crazy so I'm suppose to leave the building but the damn
+door is stuck.");
             Console.WriteLine("1 - Well what do you have around you? || 2 - What do you want me to do? || 3 - Define nowhere. ");
            int answer2 = int.Parse(Console.ReadLine());
             switch (answer2)
