@@ -52,7 +52,7 @@ namespace GitHub_Deneme
             Console.SetCursorPosition(1, 9);
             CanDEV.text = @"> So I kinda need your help. I'm part of a research group and we are working on a project in the 
 middle of nowhere. Problem is emergency alarms are going crazy so I'm supposed to leave the building
-but the damndoor is stuck.";
+but the damned door is stuck.";
             CanDEV.Yazı();
             Console.SetCursorPosition(20, 13);
             Console.WriteLine("1 - Well what do you have around you? || 2 - What do you want me to do? || 3 - Define nowhere. ");
@@ -61,24 +61,30 @@ but the damndoor is stuck.";
             switch (answer2)
             {
                 case 1:
-                    Console.WriteLine("I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.");
+                    CanDEV.text = "I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.";
+                    CanDEV.Yazı();
                     goto arc1;
                     
                 case 2:
-                    Console.WriteLine("I don't know some advice would be nice.");
+                    CanDEV.text = "I don't know some advice would be nice.";
+                    CanDEV.Yazı();
                     break;
                 case 3:
-                    Console.WriteLine("That doesn't matter. I need help your right now. Focus.");
+                    CanDEV.text ="That doesn't matter. I need help your right now. Focus.";
+                    CanDEV.Yazı();
+                    Console.SetCursorPosition(20, 13);
                     Console.WriteLine("1 - Well what do you have around you ? || 2 - What do you want me to do?");
                     int answer2_2 = int.Parse(Console.ReadLine());
                     switch (answer2_2)
                     {
                         case 1:
-                            Console.WriteLine("I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.");
+                            CanDEV.text = "I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.";
+                            CanDEV.Yazı();
                             goto arc1;
 
                         case 2:
-                            Console.WriteLine("I don't know some advice would be nice.");
+                            CanDEV.text = "I don't know some advice would be nice.";
+                            CanDEV.Yazı();
                             break;
                     }
                             break;
