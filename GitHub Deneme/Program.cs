@@ -58,6 +58,7 @@ but the damned door is stuck.";
             Console.WriteLine("1 - Well what do you have around you? || 2 - What do you want me to do? || 3 - Define nowhere. ");
            int answer2 = int.Parse(Console.ReadLine());
             CanDEV.Cevap();
+            //adamın konuşmasında kimyasal yok ama cevapta kimyasal var , case 2 ile arc1'e direk bağlanıyor , answer2_2deki case 2 de aynı durum
             switch (answer2)
             {
                 case 1:
@@ -66,24 +67,25 @@ but the damned door is stuck.";
                     goto arc1;
                     
                 case 2:
-                    CanDEV.text = "I don't know some advice would be nice.";
+                    CanDEV.text ="I don't know some advice would be nice.";
                     CanDEV.Yazı();
                     break;
                 case 3:
-                    CanDEV.text ="That doesn't matter. I need help your right now. Focus.";
+                    CanDEV.text = "That doesn't matter. I need help your right now. Focus.";
                     CanDEV.Yazı();
-                    Console.SetCursorPosition(20, 13);
+                    Console.SetCursorPosition(20, 11);
                     Console.WriteLine("1 - Well what do you have around you ? || 2 - What do you want me to do?");
                     int answer2_2 = int.Parse(Console.ReadLine());
+                    CanDEV.Cevap();
                     switch (answer2_2)
                     {
                         case 1:
-                            CanDEV.text = "I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.";
+                            CanDEV.text ="I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.";
                             CanDEV.Yazı();
                             goto arc1;
 
                         case 2:
-                            CanDEV.text = "I don't know some advice would be nice.";
+                            CanDEV.text ="I don't know some advice would be nice.";
                             CanDEV.Yazı();
                             break;
                     }
@@ -91,6 +93,7 @@ but the damned door is stuck.";
             }
 
             arc1:
+            Console.SetCursorPosition(20, 11);
             Console.WriteLine("1 - What kind of chemicals? || 2 - Just kick the door or something ");
             int answer3 = int.Parse(Console.ReadLine());
             switch (answer3)
