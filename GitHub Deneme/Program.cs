@@ -94,16 +94,19 @@ but the damned door is stuck.";
 
             arc1:
             Console.SetCursorPosition(20, 11);
-            Console.WriteLine("1 - What kind of chemicals? || 2 - Just kick the door or something ");
+            Console.WriteLine("1 - Did you try using the blowtorch on the door? || 2 - Just kick the door or something ");
             int answer3 = int.Parse(Console.ReadLine());
             switch (answer3)
             {
                 case 1:
-                    Console.WriteLine("");
-                    goto arc1;
+                    CanDEV.text ="That sounds too dangerous but desperate times call for deperate measures.";
+                    goto arc2;
+                    CanDEV.Yazı();
+                
 
                 case 2:
-                    Console.WriteLine("I don't know some advice would be nice.");
+                   CanDEV.text ="I'm not really a strong guy but I can give it a try";
+                    CanDEV.Yazı();
                     break;
                 
             }
