@@ -25,6 +25,7 @@ namespace GitHub_Deneme
             Console.SetCursorPosition(20, 10);
             Console.WriteLine("> Signal acquired press 'Enter' to continue...");
             Console.ReadKey();
+
             Console.ForegroundColor = ConsoleColor.Green;
             Console.SetCursorPosition(1, 12);
             CanDEV.text = "> Hello! Can you hear me?";
@@ -56,23 +57,37 @@ but the damned door is stuck.";
             CanDEV.Yazı();
             Console.SetCursorPosition(20, 13);
             Console.WriteLine("1 - Well what do you have around you? || 2 - What do you want me to do? || 3 - Define nowhere. ");
+
            int answer2 = int.Parse(Console.ReadLine());
             CanDEV.Cevap();
             //adamın konuşmasında kimyasal yok ama cevapta kimyasal var , case 2 ile arc1'e direk bağlanıyor , answer2_2deki case 2 de aynı durum
             switch (answer2)
             {
                 case 1:
-                    CanDEV.text = "I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.";
+                    CanDEV.text = ">I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.";
                     CanDEV.Yazı();
                     goto arc1;
                     
                 case 2:
-                    CanDEV.text ="I don't know some advice would be nice.";
+                    CanDEV.text =">I don't know some advice would be nice.";
                     CanDEV.Yazı();
+                    advice:
+                    Console.SetCursorPosition(20, 11);               
+                    Console.WriteLine("1 - Well what do you have around you ? ");
+                    int answer2_1 = int.Parse(Console.ReadLine());
+                    CanDEV.Cevap();
+                    switch (answer2_1)
+                    {
+                        case 1:
+                            CanDEV.text = ">I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.";
+                            CanDEV.Yazı();
+                            goto arc1;
+                    }
                     break;
                 case 3:
-                    CanDEV.text = "That doesn't matter. I need help your right now. Focus.";
+                    CanDEV.text = ">That doesn't matter. I need your help right now. Focus.";
                     CanDEV.Yazı();
+
                     Console.SetCursorPosition(20, 11);
                     Console.WriteLine("1 - Well what do you have around you ? || 2 - What do you want me to do?");
                     int answer2_2 = int.Parse(Console.ReadLine());
@@ -80,14 +95,15 @@ but the damned door is stuck.";
                     switch (answer2_2)
                     {
                         case 1:
-                            CanDEV.text ="I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.";
+                            CanDEV.text =">I'm in a small room filled with my research papers my lucky pocket knife and a blow torch.";
                             CanDEV.Yazı();
                             goto arc1;
 
                         case 2:
-                            CanDEV.text ="I don't know some advice would be nice.";
+                            CanDEV.text =@">I don't know some advice would be nice.";
                             CanDEV.Yazı();
-                            break;
+                            goto advice;
+                            
                     }
                             break;
             }
@@ -95,25 +111,35 @@ but the damned door is stuck.";
             arc1:
             Console.SetCursorPosition(20, 11);
             Console.WriteLine("1 - Did you try using the blowtorch on the door? || 2 - Just kick the door or something ");
+            
             int answer3 = int.Parse(Console.ReadLine());
             switch (answer3)
             {
                 case 1:
-                    CanDEV.text ="That sounds too dangerous but desperate times call for deperate measures.";
-                    goto arc2;
+                    CanDEV.Cevap();
+                    CanDEV.text =">That sounds too dangerous but desperate times call for deperate measures.";                    
                     CanDEV.Yazı();
+                    goto arc2;
+                    
                 
 
                 case 2:
-                   CanDEV.text ="I'm not really a strong guy but I can give it a try";
+                    CanDEV.Cevap();
+                    CanDEV.text =">I'm not really a strong guy but I can give it a try";
                     CanDEV.Yazı();
                     break;
                 
             }
 
+            arc2:
+            CanDEV.text = ">I used the blowtorch and it worked I broke the door. Hopefully they are not gonna make me pay for it." +
+                " Anyway I have to get out. Idont know what happened here but it smells terrible.";
+            CanDEV.Yazı();
 
 
-           
+
+
+
 
         }
     }

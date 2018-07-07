@@ -32,7 +32,7 @@ namespace GitHub_Deneme
             {
                 Console.SetCursorPosition(31, a);
                 Console.WriteLine("|");
-                Console.SetCursorPosition(94, a);
+                Console.SetCursorPosition(75, a);
                 Console.WriteLine("|");
             }
             //HUD
