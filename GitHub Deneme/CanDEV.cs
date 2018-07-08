@@ -50,7 +50,7 @@ namespace GitHub_Deneme
         //ZAR
         public static int Zar()
         {
-            int şans = zar.Next(1, 7);
+            int şans = zar.Next(1, 21);
             Console.WriteLine("You've rolled ~ {0} ~ ", şans);
             return şans;
         }
