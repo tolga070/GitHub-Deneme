@@ -8,6 +8,7 @@ namespace GitHub_Deneme
 {
     class TolgaDev
     {
+       
         //daha karar vermedim diye hepsi gas station oldu sonra değiştircem , şu labrotuardan çıkış kısmını yapalım random zarla burayı yaparız
         //sen de hikayenin kalanını buralara yazarsın
         public static void GasStation()
@@ -35,4 +36,6 @@ namespace GitHub_Deneme
 
         }
     }
-}
+    
+  
+    }
