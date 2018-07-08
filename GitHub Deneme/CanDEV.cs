@@ -27,12 +27,12 @@ namespace GitHub_Deneme
             Console.SetCursorPosition(30, 0);
             Console.WriteLine(" ________________________________________________________________");
             Console.SetCursorPosition(30, 7);
-            Console.WriteLine(" ----------------------------------------------------------------");
+            Console.WriteLine(" -----------------------------------------------------------------");
             for (int a = 1; a <= 6; a++)
             {
                 Console.SetCursorPosition(31, a);
                 Console.WriteLine("|");
-                Console.SetCursorPosition(75, a);
+                Console.SetCursorPosition(95, a);
                 Console.WriteLine("|");
             }
             //HUD
@@ -40,7 +40,7 @@ namespace GitHub_Deneme
             Console.SetCursorPosition(55, 2);
             Console.WriteLine("-PLACEHOLDER-");
             Console.SetCursorPosition(35, 5);
-            Console.WriteLine("Health: {0}/{1}", Max_HP , Current_HP);
+            Console.WriteLine("Health: {0}/{1}", Current_HP , Max_HP);
             Console.SetCursorPosition(55, 5);
             Console.WriteLine("Supplies: {0}", supply );
             Console.SetCursorPosition(75, 5);
