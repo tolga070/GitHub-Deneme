@@ -16,7 +16,7 @@ namespace GitHub_Deneme
             int şans = dice.Next(1, 7);
             return şans;
         }
-
+        //sendeki aynı değil mergelemeden değişikllik yapmışsın
         public static int Mekan()
         {
             int sayı1 = Zar2();
