@@ -53,6 +53,7 @@ namespace GitHub_Deneme
             Console.WriteLine(sayı5);
             Console.WriteLine(sayı6);
             return sayı1;
+
         }
 
 
